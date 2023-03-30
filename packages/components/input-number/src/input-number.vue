@@ -140,7 +140,7 @@ const displayValue = computed(() => {
   let currentValue: number | string | undefined | null = data.currentValue
   if (isNil(currentValue)) return ''
   if (isNumber(currentValue)) {
-    if (Number.isNaN(currentValue)) return ''
+    //if (Number.isNaN(currentValue)) return ''
     if (!isUndefined(props.precision)) {
       currentValue = currentValue.toFixed(props.precision)
     }
